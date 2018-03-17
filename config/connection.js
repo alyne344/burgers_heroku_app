@@ -1,11 +1,11 @@
 //connection to SQL
 const mysql = require('mysql');
 var connection = {};
+var jaws = "mysql://atqyurdnsixwsoff:mfp4lf7xlg074jwl@y0nkiij6humroewt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/tpmphdtlnv955xd5";
 
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(
-    process.env.JAWSDB_URL
-  );
+if (jaws) { 
+//Heroku deployment
+  connection = mysql.createConnection(jaws);
 
 } else {
   connection = mysql.createConnection({
