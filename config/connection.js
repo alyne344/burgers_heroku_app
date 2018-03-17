@@ -9,11 +9,11 @@ if (jaws) {
 
 } else {
   connection = mysql.createConnection({
-    host: 'localhost',
+    host: 'y0nkiij6humroewt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     port: 3306,
-    user: 'root',
-    password: 'root',
-    database: 'burgers_db'
+    user: 'atqyurdnsixwsoff',
+    password: 'mfp4lf7xlg074jwl',
+    database: 'tpmphdtlnv955xd5'
   });
 }
 
